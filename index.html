@@ -409,7 +409,7 @@
         // Write a JavaScript functionality to add a new link into the navbar
         
         // Write a JavaScript functionality to change the color of the main heading title
-        let headingColor = function(string){
+        let headingColor = function(){
             let newColor = document.getElementsByTagName('h1')[0]
             newColor.style.color= "red"
         }
@@ -422,20 +422,21 @@
         newBg_color()
         // Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
 
-        window.onload= function(){
+        let removeLink= function(){
             let link = document.querySelector('div.p-4:nth-of-type(2) > ol.list-unstyled > li:nth-of-type(2)')
-            link.remove()
+            link.remove();
         }
+        window.onload= removeLink();
 
         // Write a JavaScript functionality to remove the first 50 characters in the first paragraph for every blog post
-        let remove50Char = function(){
-            for(i=0; i<blog-post.lenght; i++){
+        /*let remove50Char = function(){
+            for(i=0; i< blog-post.lenght; i++){
                 let first50Chars = document.querySelector('div.blog-post:nth-of-type(i)')
                 first50Chars(i).innerText
             }
             console.log(first50Chars(i).innerText)
         }
-        remove50Char()
+        remove50Char()*/
         // Write a JavaScript functionality to add a new Blog Post (div with title and text)
         // Write a JavaScript functionality to remove the last Blog Post when the user clicks on the "Older" button
 
